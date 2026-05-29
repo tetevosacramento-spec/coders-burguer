@@ -1,3 +1,10 @@
+:root{
+    --primary: #C05A3E;
+    --secondary: #D48C24;
+    --tertiary: #1A1A1A;
+    --neutral: #0F0F0F;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +17,7 @@ body {
 
 
 .carrocel-product {
-    background-color: blue;
+    background-color: var(--primary);
     display: flex;
 }
 
@@ -19,3 +26,4 @@ body {
     width: 240px;
     height: 280px;
 }
+
