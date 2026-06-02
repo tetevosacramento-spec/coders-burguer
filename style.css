@@ -12,6 +12,7 @@
 }
 
 body {
+    background-color: var(--neutral);
     height: 100dvb;
 }
 
@@ -27,3 +28,21 @@ body {
     height: 280px;
 }
 
+header{
+    color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+
+li:hover{
+    background-color: var(--secondary);
+    padding: 2rem;
+    cursor: pointer;
+}
