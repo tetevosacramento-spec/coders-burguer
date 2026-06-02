@@ -28,11 +28,14 @@ body {
     height: 280px;
 }
 
+/**************************** HEADER *******************************/
+
 header{
     color: var(--primary);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    height: 64px;
 }
 
 ul{
@@ -40,9 +43,34 @@ ul{
     list-style-type: none;
 }
 
-
-li:hover{
-    background-color: var(--secondary);
-    padding: 2rem;
-    cursor: pointer;
+.nav-link{
+    display: flex;
+    border-radius: 0px;
+    padding-left: 16px;
+    color: var(--secondary);
 }
+
+.nav-link:hover{
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.nav-link:active{
+    color: green;
+    border-bottom: 8px;
+}
+
+
+
+
+.ask{
+    display: flex;
+    background-color: var(--primary) ;
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+/**************************** HEADER *******************************/
