@@ -1,76 +1,91 @@
-:root{
-    --primary: #C05A3E;
-    --secondary: #D48C24;
-    --tertiary: #1A1A1A;
-    --neutral: #0F0F0F;
+:root {
+  --primary: #c05a3e;
+  --secondary: #d48c24;
+  --tertiary: #1a1a1a;
+  --neutral: #0f0f0f;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--neutral);
-    height: 100dvb;
+  background-color: var(--neutral);
+  height: 100dvb;
 }
 
-
 .carrocel-product {
-    background-color: var(--primary);
-    display: flex;
+  background-color: var(--primary);
+  display: flex;
 }
 
 .card-product {
-    background-color: aliceblue;
-    width: 240px;
-    height: 280px;
+  background-color: aliceblue;
+  width: 240px;
+  height: 280px;
 }
 
 /**************************** HEADER *******************************/
 
-header{
-    color: var(--primary);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 64px;
+header {
+  color: var(--primary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 64px;
 }
 
-ul{
-    display: flex;
-    list-style-type: none;
+ul {
+  display: flex;
+  list-style-type: none;
 }
 
-.nav-link{
-    display: flex;
-    border-radius: 0px;
-    padding-left: 16px;
-    color: var(--secondary);
+.nav-link {
+  display: flex;
+  border-radius: 0px;
+  padding-left: 16px;
+  color: var(--secondary);
 }
 
-.nav-link:hover{
-    cursor: pointer;
-    color: var(--primary);
+.nav-link:hover {
+  cursor: pointer;
+  color: var(--primary);
 }
 
-.nav-link:active{
-    color: green;
-    border-bottom: 8px;
+.nav-link:active {
+  color: green;
+  border-bottom: 8px;
 }
 
-
-
-
-.ask{
-    display: flex;
-    background-color: var(--primary) ;
-    font-size: 12px;
-    padding: 8px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    border: none;
+.ask {
+  display: flex;
+  background-color: var(--primary);
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
 }
+
+#nav-cardapio {
+  display: flex;
+  background-color: var(--primary);
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+#nav-contado {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 6px;
+  border: solid var(--primary);
+
+}
+
 
 /**************************** HEADER *******************************/
