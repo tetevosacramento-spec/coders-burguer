@@ -1,9 +1,10 @@
-:root {
-  --primary: #c05a3e;
-  --secondary: #d48c24;
-  --tertiary: #131313;
-  --neutral: #575555;
-  --background-card: #1c1b1b;
+:root{
+    --primary: #C05A3E;
+    --secondary: #D48C24;
+    --tertiary: #131313;
+    --neutral: #575555;
+    --background-card: #1C1B1B;
+    
 }
 
 * {
@@ -136,6 +137,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 32px;
 }
 
 .carrocel-product {
@@ -159,6 +161,44 @@ ul {
   margin-bottom: 10px;
   overflow: hidden;
   border-radius: 6px 6px 0px 0px;
+  
 }
 
+.text-word{
+    color:#D1BCAB;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+.box-title{
+    color:var(--primary);
+    padding: 10px;
+    font-size: 10px;
+}
+    .sub{
+      
+      background-color: var(--tertiary);
+      color: azure;
+      font-size: 32px;
+      padding: 10px;
+      margin-bottom: 12px;
+    }
+    
+    .boxh3{
+      color: white;
+      font-size: 14px;
+      padding: 10px;
+
+      }
 /****************************  BLOG  *******************************/
+.footer{
+  background-color: rgb(31, 34, 34);
+  
+}
+.blogone{
+  text-align: center;
+  color: #C05A3E;
+  font-size: 26px;
+  font-weight: bold;
+}
