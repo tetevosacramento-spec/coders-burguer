@@ -72,9 +72,44 @@ ul {
 /**************************** HEADER *******************************/
 /**************************** BANNER *******************************/
 
-#nav-cardapio {
+.banner {
+  height: 450px;
   display: flex;
-  background-color: var(--primary);
+  align-items: center;
+  justify-content: center;
+  background-image: url("./img/img4.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.title-banner {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description-banner {
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.btn-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn {
   font-size: 12px;
   padding: 8px 16px;
   border-radius: 6px;
@@ -82,14 +117,17 @@ ul {
   border: none;
 }
 
-#nav-contado {
-  display: flex;
-  justify-content: space-evenly;
-  border-radius: 6px;
-  border: solid var(--primary);
+.btn-banner {
+  background-color: var(--primary);
   font-size: 12px;
-  padding: 8px 16px;
+}
+
+.btn-contact{
+  background-color: transparent;
+  border: 2px var(--primary) solid;
   color: var(--primary);
+  border-width: thin;
+  font-size: 12px;
 }
 
 /**************************** BANNER *******************************/
@@ -122,7 +160,5 @@ ul {
   overflow: hidden;
   border-radius: 6px 6px 0px 0px;
 }
-
-
 
 /****************************  BLOG  *******************************/
