@@ -4,6 +4,7 @@
     --tertiary: #131313;
     --neutral: #575555;
     --background-card: #1C1B1B;
+    
 }
 
 * {
@@ -122,6 +123,10 @@ ul {
     
 }
 
-
-
+.text-word{
+    color:#D1BCAB;
+}
+.box-title{
+    color:var(--primary);
+}
 /****************************  BLOG  *******************************/
