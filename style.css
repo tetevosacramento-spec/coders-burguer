@@ -7,9 +7,9 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,33 +19,44 @@ body {
 
 /**************************** HEADER *******************************/
 
-header{
-    color: var(--primary);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 64px;
+header {
+  color: var(--primary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 64px;
 }
 
-ul{
-    display: flex;
-    list-style-type: none;
+ul {
+  display: flex;
+  list-style-type: none;
 }
 
-.nav-link{
-    display: flex;
-    border-radius: 0px;
-    padding-left: 16px;
-    color: var(--secondary);
+.nav-link {
+  display: flex;
+  border-radius: 0px;
+  padding-left: 16px;
+  color: var(--secondary);
 }
 
-.nav-link:hover{
-    cursor: pointer;
+.nav-link:hover {
+  cursor: pointer;
+  color: var(--primary);
 }
 
-.nav-link:active{
-    color: green;
-    border-bottom: 8px;
+.nav-link:active {
+  color: green;
+  border-bottom: 8px;
+}
+
+.ask {
+  display: flex;
+  background-color: var(--primary);
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
 }
 
 .ask{
@@ -59,7 +70,28 @@ ul{
 }
 
 /**************************** HEADER *******************************/
+/**************************** BANNER *******************************/
 
+#nav-cardapio {
+  display: flex;
+  background-color: var(--primary);
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+#nav-contado {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 6px;
+  border: solid var(--primary);
+
+}
+
+/**************************** BANNER *******************************/
+/****************************  BLOG  *******************************/
 .carrocel-blog {
     display: flex;
     flex-direction: column;
@@ -89,6 +121,7 @@ ul{
     border-radius: 6px 6px 0px 0px;
     
 }
-.box-title{
-    color: aqua;
-}
+
+
+
+/****************************  BLOG  *******************************/
