@@ -1,13 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sobre Nós | Coder's Burguers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Hanken+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Sobre</h1>
-    
+  <header class="main-header">
+    <div class="header-container">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="" height="32px">
+      </a>
+      <nav class="nav-menu">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="#">Produtos</a>
+        <a class="nav-link active" href="#">Sobre</a>
+        <a class="nav-link" href="#">Contato</a>
+      </nav>
+      <button class="btn btn-primary-container">
+        Pedir Agora
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-bg">
+        <img alt="Ambiente do Restaurante" src="../img/ristorante.png">
+        <div class="charred-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <span class="section-subtitle">Desde 2015</span>
+        <h1 class="hero-title">Nossa História</h1>
+      </div>
+    </section>
+
+    <section class="story-section">
+      <div class="story-grid">
+        <div class="story-text">
+          <h2 class="section-title">Paixão pelo Fogo e Ingredientes Reais</h2>
+          <p class="body-large">
+            O ARTESANAL BURGER nasceu do desejo de resgatar a autenticidade do hambúrguer feito na brasa. Em um mundo de sabores processados, decidimos seguir o caminho mais difícil: o caminho do fogo, da fumaça e do frescor absoluto.
+          </p>
+          <p class="body-medium">
+            Cada blend é moído diariamente em nossa cozinha, cada pão é fermentado lentamente para atingir a textura perfeita, e cada ingrediente é selecionado de produtores locais que compartilham nossa filosofia de qualidade intransigente. Não somos apenas uma hamburgueria; somos um lounge gourmet onde a tradição se encontra com a sofisticação.
+          </p>
+        </div>
+        <div class="story-image-wrapper">
+          <div class="image-blur-effect"></div>
+          <img alt="Grelha em chamas" class="story-image" src="../img/food.png">
+        </div>
+      </div>
+    </section>
+
+    <section class="values-section">
+      <div class="container text-center">
+        <h2 class="section-title-center">Nossos Compromissos</h2>
+        <p class="section-description">Três pilares que sustentam cada prato que sai da nossa cozinha.</p>
+        
+        <div class="bento-grid">
+          <div class="glass-card">
+            <div class="card-icon-wrapper">
+              <span class="material-symbols-outlined">workspace_premium</span>
+            </div>
+            <h3 class="card-title">Ingredientes Premium</h3>
+            <p class="card-text">Trabalhamos exclusivamente com cortes Angus certificados e vegetais orgânicos colhidos na madrugada.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon-wrapper">
+              <span class="material-symbols-outlined">local_fire_department</span>
+            </div>
+            <h3 class="card-title">Fogo de Verdade</h3>
+            <p class="card-text">Nossa alma está no calor da lenha e do carvão, garantindo aquele sabor defumado impossível de replicar.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon-wrapper">
+              <span class="material-symbols-outlined">auto_awesome</span>
+            </div>
+            <h3 class="card-title">Experiência Única</h3>
+            <p class="card-text">Um ambiente pensado nos mínimos detalhes para que cada mordida seja acompanhada de uma boa conversa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="space-section">
+      <div class="container">
+        <div class="space-banner">
+          <img alt="Interior do restaurante" src="../img/ristorante.png">
+          <div class="banner-overlay">
+            <div class="banner-content">
+              <h2 class="banner-title">Nosso Espaço</h2>
+              <p class="banner-text">Industrial, acolhedor e autêntico. Criamos um refúgio urbano onde o design encontra o sabor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-container">
+        <h2 class="cta-title">Pronto para a melhor mordida da sua vida?</h2>
+        <div class="cta-buttons">
+          <button class="btn btn-primary btn-with-icon">
+            <span class="material-symbols-outlined">menu_book</span>
+            Ver Cardápio
+          </button>
+          <button class="btn btn-outline btn-with-icon">
+            <span class="material-symbols-outlined">chat_bubble</span>
+            Entre em Contato
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <span class="footer-logo" title="Estevão, Jhonatan e Matheus">Desenvolvido pelo Grupo Coder's</span>
+      <div class="footer-links">
+        <span class="footer-link">Privacidade</span>
+        <span class="footer-link">Termos de Uso</span>
+      </div>
+      <div class="footer-copy">© 2026 Curso do Senai de Javascript</div>
+    </div>
+  </footer>
+
+  <script>
+    // Efeito de scroll no Header
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('.main-header');
+        if (window.scrollY > 50) {
+            header.classList.add('shadow-lg');
+        } else {
+            header.classList.remove('shadow-lg');
+        }
+    });
+
+    // Efeito de Luz (Glow) nos cards do Bento Grid
+    const cards = document.querySelectorAll('.glass-card');
+    cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
+  </script>
 </body>
 </html>
