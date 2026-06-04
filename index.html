@@ -4,39 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coder's Buguers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Hanken+Grotesk:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <img src="./img/logo.png" alt="Logo da Coder's Buguers" height="32px"/>
+    <header class="main-header">
+      <div class="header-container">
+        <a href="./index.html">
+          <img src="./img/logo.png" alt="Logo da Coder's Buguers" height="32px">
+        </a>
+        <nav class="nav-menu">
+          <a class="nav-link active" href="./index.html">Home</a>
+          <a class="nav-link" href="#">Produtos</a>
+          <a class="nav-link" href="./sobre/sobre.html">Sobre</a>
+          <a class="nav-link" href="#contato">Contato</a>
+        </nav>
+        <button class="btn btn-primary-container">
+          Pedir Agora
+        </button>
       </div>
-      <nav>
-        <ul>
-          <a href="./index.html">
-            <li class="nav-link">Home</li>
-          </a>
-          <li class="nav-link">Produto</li>
-          <li class="nav-link">Contato</li>
-          <a href="./sobre/sobre.html">
-            <li class="nav-link">Sobre</li>
-          </a>
-        </ul>
-      </nav>
-      <button class="ask">Pedir Agora</button>
     </header>
 
-    <div class="banner">
-      <div class="container">
-        <h2 class="title-banner">O Sabor da <br> Verdadeira Carne</h2>
-        <p class="description-banner">Hamburguer artesanais grelhados na brasa, com ingredinetes frescos <br> e um topque de sofisticação </p>
+    <section class="banner">
+      <div class="banner-content">
+        <h1 class="title-banner">O Sabor da Verdadeira Carne</h1>
+        <p class="description-banner">Hambúrgueres artesanais grelhados na brasa, com ingredientes frescos e um toque de sofisticação.</p>
         <div class="btn-menu">
           <button class="btn btn-banner">VER CARDÁPIO</button>
           <button class="btn btn-contact">ENTRE EM CONTATO</button>
         </div>
       </div>
-      </div>
-    </div>
+    </section>
 
     <section class="carrocel-blog">
       <h2 class="sub">Blog</h2>
@@ -109,10 +107,15 @@
     </div>
   </section>
 
-    <footer class="footer">
-      <p class="f1">ARTESANAL BURGER</p>
-      <a href="">Privacidade</a>
-      <a href="">Termos de uso</a>
+    <footer class="main-footer">
+      <div class="footer-container">
+        <span class="footer-logo" title="Estevão, Jhonatan e Matheus">Desenvolvido pelo Grupo Coder's</span>
+        <div class="footer-links">
+          <span class="footer-link">Privacidade</span>
+          <span class="footer-link">Termos de Uso</span>
+        </div>
+        <div class="footer-copy">© 2026 Curso do Senai de Javascript</div>
+      </div>
     </footer>
     <script src="./script.js"></script>
   </body>
